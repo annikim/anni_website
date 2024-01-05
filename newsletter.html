@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LDRletters</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<button onclick="location.href='index.html';" id="homebutton"> LDRletters </button>
+
+<header>
+  <h1 id="newslettertitle"> Let's Make Your Newsletter! </h1>
+</header>
+
+<p>
+  Not a consistent texter but still want to stay in touch with your friends post-graduation or post-move? Not a problem with LDRletters!
+</p>
+
+  <!--steps-->
+  <section class="container reveal">
+    
+<h3>
+  Steps:
+</h3>
+    <div class="text-container">
+       <div class="text-box">
+  <p id="steps">
+    1. Enter your name and email address.<br>
+    2. Fill up your newsletter by answering questions (favorite movies this year, music, memories, etc.) <br>
+    3. Choose a desired newsletter template <Br> 
+    4. Compile your emailing friend list <Br>
+    5. Send your newsletter!
+    <Br>
+  </p>
+      </div>
+    </div>
+    </section>
+
+  
+  <script type="text/javascript" src="script.js">
+  </script>
+
+  
+<!--basic info-->
+  <section class="container reveal">
+    <div class="text-container">
+  <p class="headers">
+  Basic Info:
+  </p>
+      <div class="text-box">
+  <form id="frm1" action="/action_page.php">
+    Name: <Br><input type="text" name="name" minlength="2"><br>
+    Email address: <Br> <input type="email" name="email" minlength="10"><br><br>
+  </form>
+    </div>
+    </div>
+    </section>
+
+ <!--newsletter-->
+  <section class="container reveal">
+    <div class="text-container">
+<p class="newsheader">
+Questions to Fill your Newsletter:
+</p>
+  <p id="commas">
+**If there are several answers for one question, please separate each answer with a comma. 
+  </p>
+  <br>
+      <div class="text-box">
+     <form id="frm2" action="/action_page.php">
+  What music did you listen to this year? <input type="text" name="music" maxlength="200"><br>
+<br>
+  What movies or TV shows did you watch this year? (optional: include your rankings 1-10)<input type="text" name="movies" maxlength="200"><br>
+<Br>
+  Big events this year!<br><input type="text" name="memories" maxlength="200"><br><br>
+<Br>
+  Little Tidbits (anything you want to add to your newsletter): <input type="text" name="tidbits" maxlength="200"><br>
+<br>
+  What Lessons did you learn this year? <input type="text" name="lessons" maxlength="200"><br>
+<br>
+  Photos (optional, up to 4): 
+  <input type= "file" accept=".jpg, .png, .heic, .jpeg" name="photos" maxlength="200"><br>
+  <br>
+
+   <br> <input type="button" onclick="myFunction()" value="Submit">
+   <br>
+  </form>
+      </div>
+    </div>
+  </section>
+
+
+</html>
