@@ -16,6 +16,25 @@ p
   font-weight: lighter;
 }
 
+@font-face 
+{
+  font-family: oliver;
+  src: url('oliver_3/Oliver-regular.ttf') format("truetype");
+}
+
+@font-face 
+{
+  font-family: geologica;
+  src: url('oliver_3/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf') format("truetype");
+}
+
+/*index.html styling*/
+
+title
+{
+  font-family: oliver;
+}
+
 h1 
 {
   color: black;
@@ -24,12 +43,6 @@ h1
   margin-top: 100px;
   margin-left: 20px;
   font-size: 50px;
-}
-
-#newslettertitle
-{
-  margin-top: 40px;
-  font-size: 60px;
 }
 
 #titletext 
@@ -64,23 +77,6 @@ strong::before
   transform: rotate(-2deg);
 }
 
-h3
-{
-margin-bottom: 5px;
-font-family: oliver;
-font-size: 30px;
-}
-/*margin-left removed*/
-
-#steps 
-{
-  padding: 3px;
-  margin-top: 10px;
-  font-family: geologica;
-  font-weight: lighter;
-  line-height: 1.7;
-}
-
 #letterbutton
 {
   cursor: pointer;
@@ -102,7 +98,31 @@ font-size: 30px;
   color: black;
   background-color:yellowgreen;
   border: none;
+  padding: 12px;
 }
+
+.description
+{
+  font-family: geologica;
+  margin-top: 10px;
+}
+
+#goodfor
+{
+  font-family: oliver;
+  font-size: 35px;
+}
+
+ul
+{
+  list-style-type: none;
+  line-height: 2;
+  font-family: geologica;
+  font-weight: lighter;
+}
+
+
+/*newsletter.html styling*/
 
 #homebutton
 {
@@ -116,38 +136,49 @@ font-size: 30px;
   background-color: white;
 }
 
-.headers
+#newslettertitle
 {
-  font-weight: bold;
-  font-family: oliver;
-  font-size: 30px;
+  margin-top: 40px;
+  font-size: 60px;
+  margin-left: 40px;
+
 }
 
-#newsheader
+#newsletterdesc
 {
-  font-weight: bold;
-  font-family: oliver;
-  font-size: 30px;
-}
-/*margin-left removed*/
-
-#commas
-{
-  font-size: 15px;
-}
-/*margin-left removed*/
-
-
-p
-{
-  margin-left: 20px;
+  margin-top: 40px;
   font-size: 20px;
+  margin-left: 40px;
+  font-family: geologica;
+  font-weight: lighter;
 }
 
-form
+h3
 {
-  margin-left: 20px;
-  line-height: 1.5;
+margin-bottom: 5px;
+font-family: oliver;
+font-size: 30px;
+margin-left: 40px;
+}
+
+#steps 
+{
+  padding: 3px;
+  margin-top: 10px;
+  font-family: geologica;
+  font-weight: lighter;
+  line-height: 1.7;
+  margin-left: 40px;
+  font-size: 22px;
+}
+
+.basicinfo
+{
+  font-weight: bold;
+  font-family: oliver;
+  font-size: 30px;
+  margin-left: 40px;
+
 }
 
 #frm1
@@ -155,7 +186,21 @@ form
   font-size: 17px;
   font-family: geologica;
   font-weight: lighter;
+  margin-left: 40px;
+}
 
+#newsheader
+{
+  font-weight: bold;
+  font-family: oliver;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+#commas
+{
+  font-size: 15px;
+  margin-left: 40px;
 }
 
 #frm2
@@ -163,6 +208,7 @@ form
   font-size: 17px;
   font-family: geologica;
   font-weight: lighter;
+  margin-left: 40px;
 }
 .reveal
 {
@@ -214,38 +260,6 @@ input[type=email]:focus
   outline: none;
 }
 
-ul
-{
-  list-style-type: none;
-  line-height: 1.5;
-  font-family: geologica;
-  margin-top: 2px;
-  font-weight: lighter;
-}
-
-@font-face 
-{
-  font-family: oliver;
-  src: url('oliver_3/Oliver-regular.ttf') format("truetype");
-}
-
-@font-face 
-{
-  font-family: geologica;
-  src: url('oliver_3/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf') format("truetype");
-}
-
-.description
-{
-  font-family: geologica;
-  margin-top: 10px;
-}
-
-title
-{
-  font-family: oliver;
-}
-
 #newssubmit
 {
   cursor: pointer;
@@ -256,7 +270,6 @@ title
   font-family: oliver;
   padding: 12px;
   border-radius: 12px;
-  margin-left: 30px;
   border-style: solid;
   font-size: 20px;
   border-width: 3px;
@@ -269,7 +282,5 @@ title
   border: none;
 }
 
-.textcontainer
-{
-  margin-left: 30px;
-}
+
+
