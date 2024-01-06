@@ -1,19 +1,23 @@
-html {
+html 
+{
   height: 100%;
   width: 100%;
 }
 
-body {
+body 
+{
   background-color: white;
 
 }
 
-p{
+p
+{
   font-family: geologica;
   font-weight: lighter;
 }
 
-h1 {
+h1 
+{
   color: black;
   font-family: oliver;
   text-align: left;
@@ -28,7 +32,8 @@ h1 {
   font-size: 60px;
 }
 
-#titletext {
+#titletext 
+{
   color: black;
   margin-top: 30px;
   font-size: 22px;
@@ -39,11 +44,13 @@ h1 {
   font-weight: lighter;
 }
 
-strong {
+strong 
+{
   position: relative;
 }
 
-strong::before {
+strong::before 
+{
   /* Highlight color */
   background-color: pink;
 
@@ -59,10 +66,11 @@ strong::before {
 
 h3
 {
- margin-bottom: 5px;
-margin-left: 20px;
+margin-bottom: 5px;
 font-family: oliver;
+font-size: 30px;
 }
+/*margin-left removed*/
 
 #steps 
 {
@@ -70,6 +78,7 @@ font-family: oliver;
   margin-top: 10px;
   font-family: geologica;
   font-weight: lighter;
+  line-height: 1.7;
 }
 
 #letterbutton
@@ -107,32 +116,36 @@ font-family: oliver;
   background-color: white;
 }
 
-.headers{
+.headers
+{
   font-weight: bold;
   font-family: oliver;
   font-size: 30px;
 }
 
-.newsheader
+#newsheader
 {
-  margin-left: 20px;
   font-weight: bold;
   font-family: oliver;
   font-size: 30px;
 }
+/*margin-left removed*/
 
 #commas
 {
-  margin-left: 10px;
   font-size: 15px;
 }
+/*margin-left removed*/
 
-p{
+
+p
+{
   margin-left: 20px;
   font-size: 20px;
 }
 
-form{
+form
+{
   margin-left: 20px;
   line-height: 1.5;
 }
@@ -151,18 +164,21 @@ form{
   font-family: geologica;
   font-weight: lighter;
 }
-.reveal{
+.reveal
+{
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 2s all ease;
 }
-.reveal.active{
+.reveal.active
+{
   transform: translateY(0);
   opacity: 1;
 }
 
-input[type=email]{
+input[type=email]
+{
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -172,7 +188,8 @@ input[type=email]{
   font-family: geologica;
   font-size: 16px;
 }
-input[type=text] {
+input[type=text] 
+{
   width: 80%;
   padding: 12px 20px;
   margin: 8px 1px;
@@ -183,19 +200,22 @@ input[type=text] {
   font-size: 16px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus 
+{
   border-color: #b6e756;
   background: transparent;
   outline: none;
 }
 
-input[type=email]:focus {
+input[type=email]:focus 
+{
   border-color: #b6e756;
   background: transparent;
   outline: none;
 }
 
-ul{
+ul
+{
   list-style-type: none;
   line-height: 1.5;
   font-family: geologica;
@@ -203,12 +223,14 @@ ul{
   font-weight: lighter;
 }
 
-@font-face {
+@font-face 
+{
   font-family: oliver;
   src: url('oliver_3/Oliver-regular.ttf') format("truetype");
 }
 
-@font-face {
+@font-face 
+{
   font-family: geologica;
   src: url('oliver_3/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf') format("truetype");
 }
@@ -222,4 +244,32 @@ ul{
 title
 {
   font-family: oliver;
+}
+
+#newssubmit
+{
+  cursor: pointer;
+  position: relative;
+  background-color:white;
+  border-color: black;
+  color: black;
+  font-family: oliver;
+  padding: 12px;
+  border-radius: 12px;
+  margin-left: 30px;
+  border-style: solid;
+  font-size: 20px;
+  border-width: 3px;
+}
+
+#newssubmit:hover
+{
+  color: black;
+  background-color:yellowgreen;
+  border: none;
+}
+
+.textcontainer
+{
+  margin-left: 30px;
 }
